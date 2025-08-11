@@ -10,3 +10,4 @@ let ii = sortArray.splice(sortArray.length - 1);
 return array.reduce((x,y) => x + y),0;
 }
 console.log(sumArray([]))
+

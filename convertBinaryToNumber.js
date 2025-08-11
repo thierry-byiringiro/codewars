@@ -5,3 +5,4 @@ const binaryArrayToNumber = arr => {
   }
   return binaryToDecimal(joinedArr);
 };
+console.log(binaryArrayToNumber([1,1,0,1]))
