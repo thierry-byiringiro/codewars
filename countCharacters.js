@@ -14,4 +14,4 @@ if(string.length === 0)return {};//firstly this condition tells that if the stri
   }
   return obj;
 }
-console.log(count('aime'));//{b:1,y:1,i:3,r:2,n:1,g:1,o:1}
+console.log(count('Indivisibilities'));//{b:1,y:1,i:3,r:2,n:1,g:1,o:1}
