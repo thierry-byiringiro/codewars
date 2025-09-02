@@ -1,18 +1,28 @@
 function one(){
-    return 1;
+    console.log(1)
+    return '1';
 }
 function add(){
+    console.log(`+`)
     return `+`;
 }
 function two(){
-    return 2;
+    return '2';
 }
 
-let onee = one();
-console.log(onee)
-let addd = add();
-console.log(addd)
-let twoo = two();
-console.log(twoo)
+console.log(two(add(two())));
+
+
+function one(x) {
+  console.log("one");
+  return "one";
+}
+
+function two() {
+  console.log("two");
+  return "two";
+}
+
+console.log(one(two())); 
 
 

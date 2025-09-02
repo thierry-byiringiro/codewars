@@ -17,3 +17,4 @@ const capitalize = (str) =>{
     })
     return Array.of(earr.join(""),oarr.join(""));
 }
+console.log(capitalize('byiringiro'))

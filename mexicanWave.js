@@ -9,4 +9,4 @@ for(let i = 0;i<lengthofStr;i++){
 }
 return newArr;
 }
-console.log(mexicanWave('byiringiro'));
+console.log(mexicanWave('aime'));
