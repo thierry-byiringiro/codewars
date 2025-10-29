@@ -6,4 +6,4 @@ const persistence = (num) =>{
     
     return counter;
 }
-console.log(persistence(25));
+console.log(persistence(39));
