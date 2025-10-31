@@ -12,4 +12,4 @@ stringO.forEach((elem,index)=>{
 return newString.join("");
 
 }
-console.log(solution('helloWorld'));
+console.log(solution('helloWorld'));//hello World
