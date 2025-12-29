@@ -1,28 +1,70 @@
-function one(){
-    console.log(1)
-    return '1';
+function plus(rightNum) {
+  return function (leftNum) {
+    return leftNum + rightNum;
+  }
 }
-function add(){
-    console.log(`+`)
-    return `+`;
+function times(rightNum) {
+  return function (leftNum) {
+    return leftNum * rightNum;
+  }
 }
-function two(){
-    return '2';
+function minus(rightNum) {
+  return function (leftNum) {
+    return leftNum - rightNum;
+  }
 }
-
-console.log(two(add(two())));
-
-
-function one(x) {
-  console.log("one");
-  return "one";
-}
-
-function two() {
-  console.log("two");
-  return "two";
+function dividedBy(rightNum) {
+  return function (leftNum) {
+    return Math.floor(leftNum / rightNum);
+  }
 }
 
-console.log(one(two())); 
+function zero(operation){
+  if(operation) return operation (0);
+  return 0;
+}
+function one(operation) {
+  if (operation) return operation(1);
+  return 1;
+}
+
+function two(operation) {
+  if (operation) return operation(2);
+  return 2;
+}
+
+function three(operation) {
+  if (operation) return operation(3);
+  return 3;
+}
+
+function four(operation) {
+  if (operation) return operation(4);
+  return 4;
+}
+function five(operation) {
+  if (operation) return operation(5);
+  return 5;
+}
+
+function six(operation) {
+  if (operation) return operation(6);
+  return 6;
+}
+
+function seven(operation) {
+  if (operation) return operation(7);
+  return 7;
+}
+
+function eight(operation) {
+  if (operation) return operation(8);
+  return 8;
+}
+function nine(operation) {
+  if (operation) return operation(9);
+  return 9;
+}
 
 
+console.log(nine(dividedBy(three())))
