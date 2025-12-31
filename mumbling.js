@@ -9,3 +9,4 @@ function accum(s) {
     }
   return newArr.join('-');
 }
+console.log(accum("aime"));
