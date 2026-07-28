@@ -7,11 +7,21 @@ const encrypt = (text, n) => {
     return encrypt(getOdds.join("") + "" + getEven.join(""), n - 1);
   }
 };
-console.log(encrypt("01234",4)); // s eT ashi tist!  // s eT ashi tist!
-//note : to decrypt the encrypted function you have two cases if the provided string is odd you have to loop like 4 times or 
-//event times to get the desired output and if its even you have to loop a number of odd times 
+// console.log(encrypt("This kata is very interesting!", 1));
 
-const decrypt = (text,n) => {
-
-}
-console.log(decrypt('hskt svr neetn!Ti aai eyitrsig',2))
+const decrypt = (text, n) => {
+  if (n == 0) {
+    return text;
+  } else {
+    let getOdds = text.split("").filter((_, el) => el % 2 !== 0);
+    console.log(getOdds.join(""))
+    let getEven = text.split("").filter((_, el) => el % 2 === 0);
+    console.log(getEven.join(""))
+    let result = [];
+    for (let i = 0; i <= getOdds.length; i++) {
+      result.push(getEven[i], getOdds[i+1]);
+    }
+    return decrypt(result.join(""), n - 1);
+  }
+};
+console.log(decrypt("hskt svr neetn!Ti aai eyitrsig", 1)); //ks tvs rente!niTa iae iyrtisg
